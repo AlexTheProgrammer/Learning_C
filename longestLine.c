@@ -14,12 +14,10 @@ main()
 
     max = 0;
     while((len = getline(line, MAXLINE)) > 0 )
-        if (len > max) {
-            max = len;
+        if (len > 80) {
             copy(longest, line);
+            printf("%s" , longest);
         }
-    if (max > 0 )
-        printf("%s" , longest);
     return 0;
 }
 
