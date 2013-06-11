@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 void qsort(int v[], int left, int right)
 {
     int i, last;
@@ -22,4 +24,12 @@ void swap(int v[], int i, int j)
     temp = v[i];
     v[i] = v[j];
     v[j] = temp;
+}
+main()
+{
+int a[5] = {3, 4 ,5, 1, 2};
+
+qsort(a , 0 , 4 );
+
+printf("%d" , a[0]);
 }
